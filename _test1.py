@@ -146,7 +146,7 @@ class PlayerMoveChoices1:
         if temp == 'q':
             PlayerMoveChoices1.player_move_options()
         else:
-            print(limits.choice_restriction4)
+            print(limits.choice_restriction1)
             PlayerMoveChoices1.game_settings_and_help()
 
 
@@ -291,7 +291,7 @@ class PlayerMoveChoices2:
         if temp == 'q':
             PlayerMoveChoices2.player_move_options()
         else:
-            print(limits.choice_restriction4)
+            print(limits.choice_restriction1)
             PlayerMoveChoices2.game_settings_and_help()
 
 

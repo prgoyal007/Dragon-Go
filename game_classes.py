@@ -243,7 +243,7 @@ class DragonPick:
         if temp == "q":
             DragonPick.dragon_choice()
         else:
-            print(limits.choice_restriction4)
+            print(limits.choice_restriction1)
             DragonPick.view_dragon_stats()
 
     @staticmethod
@@ -254,7 +254,7 @@ class DragonPick:
         if temp == 'q':
             DragonPick.dragon_choice()
         else:
-            print(limits.choice_restriction4)
+            print(limits.choice_restriction1)
             DragonPick.game_settings_and_help()
 
 
@@ -453,7 +453,7 @@ class PlayerMoveChoices1:
         if temp == 'q':
             PlayerMoveChoices1.player_move_options()
         else:
-            print(limits.choice_restriction4)
+            print(limits.choice_restriction1)
             PlayerMoveChoices1.game_settings_and_help()
 
 
@@ -599,7 +599,7 @@ class PlayerMoveChoices2:
         if temp == 'q':
             PlayerMoveChoices2.player_move_options()
         else:
-            print(limits.choice_restriction4)
+            print(limits.choice_restriction1)
             PlayerMoveChoices2.game_settings_and_help()
 
 
@@ -1030,7 +1030,7 @@ class ChoicePrompts:
             PlayerMoveChoices2.player_move_options()
 
         else:
-            print(limits.choice_restriction5)
+            print(limits.choice_restriction1)
             ChoicePrompts.view_stats_berries()
 
     @staticmethod
@@ -1057,5 +1057,5 @@ class ChoicePrompts:
             PlayerMoveChoices2.player_move_options()
 
         else:
-            print(limits.choice_restriction5)
+            print(limits.choice_restriction1)
             ChoicePrompts.view_stats_elixir()

@@ -6,6 +6,11 @@ import player_variables as pv
 
 
 class DragonDuels:
+    """
+    Overview:
+
+    Usage:
+    """
     @staticmethod
     def trainer_dragon_duels():
         duel_dragon = input("\nWould you like to duel the trainer's dragon? (yes/no)\n")
@@ -67,6 +72,10 @@ class DragonDuels:
 
         if battle == "d":
 
+        else:
+            print(limits.choice_restriction1)
+            DragonDuels.trainer_dragon_battle()
+
     @staticmethod
     def wild_dragon_battle():
         battle = input("\nWhat would you like to do?")
@@ -91,7 +100,7 @@ class DragonDuels:
         elif stats == "s":
             DragonDuels.trainer_dragon_battle()
         else:
-            print(limits.choice_restriction5)
+            print(limits.choice_restriction1)
             DragonDuels.view_stats_trainer_dragon()
 
     @staticmethod
@@ -112,7 +121,7 @@ class DragonDuels:
         elif stats == "s":
             DragonDuels.wild_dragon_battle()
         else:
-            print(limits.choice_restriction5)
+            print(limits.choice_restriction1)
             DragonDuels.view_stats_wild_dragon()
 
 
