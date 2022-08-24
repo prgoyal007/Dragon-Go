@@ -2,21 +2,21 @@
 # Includes: dragon choice, dragon name, first action
 # The tree starts here with all the choices
 
-import classes
-import user_input_limits as limits
+import game_classes
+import game_input_limits as limits
 import misc_variables as misc
 
 
 # User selects dragon choice
 def dragon_pick():
-    classes.DragonPick.dragon_choice()
+    game_classes.DragonPick.dragon_choice()
 
 
 # User selects dragon name
 # User is given more game description, and is asked to continue
 def game_text_and_dragon_name():
     dragon_name_input = input("What would you like to name your dragon?\n")
-    Dragon_Name = classes.DragonName(dragon_name=dragon_name_input)
+    Dragon_Name = game_classes.DragonName(dragon_name=dragon_name_input)
 
     print("\nNice choice! " + Dragon_Name.dragon_name + " is an excellent dragon name!\n")
 
@@ -41,5 +41,5 @@ def game_text_and_dragon_name():
 # User makes first move
 # Game starts now
 def player_move():
-    classes.PlayerMoveChoices1.moves_duplicate_checker()
-    classes.PlayerMoveChoices1.player_move_options()
+    game_classes.PlayerMoveChoices1.moves_duplicate_checker()
+    game_classes.PlayerMoveChoices1.player_move_options()

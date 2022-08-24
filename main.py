@@ -2,14 +2,14 @@
 # Game will run and start here
 # Includes: player name, choice to play game or not
 
-import user_input_limits as limits
+import game_input_limits as limits
 import game_phase1 as phase_1
-import classes
+import game_classes
 import misc_variables as misc
 
 # player is asked for their name
 name_input = input("What is your name, adventurer?\n")
-Player_Name = classes.PlayerName(player_name=name_input)
+Player_Name = game_classes.PlayerName(player_name=name_input)
 
 print("\nWelcome " + Player_Name.player_name + ", to Dragoneapolis, the golden city of dragons!")
 
