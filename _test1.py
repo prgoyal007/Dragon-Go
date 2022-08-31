@@ -83,7 +83,7 @@ class PlayerMoveChoices1:
                 ChoicePrompts.boulder_choices()
 
         elif move_choice == "backward":
-            print("You chose to exit Vrubel. You were clearly not up for this adventure.")
+            print("\nYou chose to exit Vrubel. You were clearly not up for this adventure.")
             print("You lose. Goodbye.")
             quit()
 
